@@ -40,3 +40,33 @@ if(loginForm){
     }
 });
 }
+
+const password = document.getElementById("password");
+const togglePassword = document.getElementById("togglePassword");
+togglePassword.addEventListener("click", function(){
+    if(password.type === "password"){
+        password.type = "text";
+        this.classList.remove("fa-eye");
+        this.classList.add("fa-eye-slash");
+    }
+    else{
+        password.type = "password";
+        this.classList.remove("fa-eye-slash");
+        this.classList.add("fa-eye");
+    }
+});
+
+const confirmPassword = document.getElementById("confirmPassword");
+const toggleConfirm = document.getElementById("toggleConfirm");
+toggleConfirm.addEventListener("click", function(){
+    if(confirmPassword.type === "password"){
+        confirmPassword.type = "text";
+        this.classList.remove("fa-eye");
+        this.classList.add("fa-eye-slash");
+    }
+    else{
+        confirmPassword.type = "password";
+        this.classList.remove("fa-eye-slash");
+        this.classList.add("fa-eye");
+    }
+});

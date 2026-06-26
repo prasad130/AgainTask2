@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Welcome Back!</h1>
+        <p>Login to continue your journey</p>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username" required><br><br>
+            <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+            <button type="submit">Login</button>
+            <p id="loginError"></p>
+        </form>
+        <p id="error"></p>
+        <p>Don't have an account?</p>
+        <div id="registerLink">
+            <a href="register.html">Register here</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
